@@ -1,0 +1,24 @@
+# hasura configuration for the CLI
+version: 2
+metadata_directory: metadata
+
+# hasura configuration for the project
+hasura_graphql_version: v1.3.0.cli-migrations-v2
+hasura_graphql_port: 8080
+hasura_graphql_admin_secret: 123456
+
+# hasura backend plus configuration
+hasura_backend_plus_version: v2.2.0
+hasura_backend_plus_port: 9000
+
+# postgres configuration
+postgres_version: 12.0
+postgres_port: 5432
+postgres_user: postgres
+postgres_password: postgres
+
+# api
+api_port: 4000
+
+# custom environment variables for Hasura GraphQL engine: webhooks, headers, etc
+env_file: ../.env.development
